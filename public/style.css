@@ -6,10 +6,62 @@
 	box-sizing: border-box;
 	outline: none;
 	font-family: Quicksand, sans-serif;
+	background-color: #84adbc;
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 95.5%;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 60px;
+	display: flex;
+	justify-items: center;
+	margin-bottom: 50px;
+	margin-top: 0;
+	margin-bottom: 4rem;
+}
+
+.links {
+	display: flex;
+	font-size: 30px;
+	justify-items: center;
+	padding-top: 60px;
+	margin-left: 200px;
+	text-align: center;
+	text-align: end;
+	align-content: center;
+	align-items: center;
+	display: inline-block;
+}
+
+.btn1 {
+	display: flex;
+	font-size: 30px;
+	padding-top: 20px 50px;
+	margin: 40px;
+	justify-content: space-between;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	display: inline-block;
+}
+
+.btn2 {
+	display: flex;
+	font-size: 30px;
+	padding-top: 1px 1px 20px 50px;
+	margin: 40px;
+	justify-content: space-between;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	display: inline-block;
 }
 
 .container {
@@ -20,135 +72,215 @@ html {
 	align-items: center;
 }
 
-.form-wrapper {
-	width: 100rem;
-	height: 70rem;
-	background-color: #eee;
-	border-radius: 3rem;
-	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-	position: relative;
-	overflow: hidden;
-}
-
-.banner {
-	position: absolute;
-	top: 25%;
-	left: -30rem;
+input {
+	display: flex;
 	text-align: center;
+	font-size: 30px;
+	align-content: center;
+	align-items: center;
+	display: block;
+	background-color: #d0d0ba;
+	border-radius: 5rem;
+}
+
+.link_signup {
 	color: #fff;
-	width: 30rem;
-	z-index: 100;
-	transition: left 0.8s;
+	background-color: transparent;
+	order: 0.1rem solid #9e9b9b;
 }
 
-.container.change .banner {
-	left: 5rem;
+.wlcm {
+	margin-top: 5rem;
+	padding-top: 30px;
+	font-size: 30px;
+	color: #555;
 }
 
-.banner h1 {
-	font-size: 4rem;
-	margin-bottom: 3rem;
+label {
+	color: #555;
 }
 
-.banner p {
-	font-size: 2rem;
-}
-
-.green-bg {
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to right, #327a94, #267280);
+.h1_login {
 	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 50;
-	transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.container.change .green-bg {
-	width: 40%;
-}
-
-.green-bg button {
-	position: absolute;
-	top: 60%;
-	left: 50%;
+	bottom: 70px;
 	transform: translateX(-50%);
 	width: 16rem;
-	height: 5rem;
+	height: 3rem;
 	background-color: transparent;
 	border: 0.1rem solid #fff;
 	border-radius: 3rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	color: #fff;
+	color: #555;
 	cursor: pointer;
 }
 
-.signup-form {
-	width: 60rem;
-	height: 100%;
+.form-wrapper {
+	width: 100rem;
+	height: 70rem;
+	background-color: #eee;
+	border-radius: 5rem;
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+	position: relative;
+	overflow: hidden;
+}
+
+.h1_bodlogin {
+	position: relative;
+	left: 75px;
+}
+
+#signup {
+	display: inline;
+	font-size: 20px;
+	text-align: left;
 	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	padding: 10rem 0;
-	transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+	margin: 0;
+	left: 680px;
+
+	padding: 20px;
+	margin-top: 5px;
 }
 
-.container.change .signup-form {
-	left: 40rem;
-}
-
-.signup-form h1 {
-	font-size: 4rem;
-	color: #53923e;
-}
-
-.social-media {
-	display: flex;
-}
-
-.signup-form p {
-	font-size: 1.8rem;
-	color: #555;
-	margin-bottom: 2rem;
-}
-
-.input-group {
+.div1 {
+	margin-left: 0;
+	padding-left: 0;
 	position: relative;
 }
 
-.input-group input {
-	width: 28rem;
-	height: 5rem;
-	padding: 1rem 1rem 1rem 3rem;
-	background-color: #ddd;
-	border: none;
-	border-radius: 5rem;
+.form_login {
+	text-align: left;
+	padding: 20px;
+	margin-top: 10px;
+	left: 5px;
 }
 
-.input-group i {
-	position: absolute;
-	top: 50%;
-	left: 1rem;
-	transform: translateY(-50%);
-	font-size: 1.2rem;
-	color: #555;
+.username {
+	margin-bottom: 15px;
+	border: 2px solid #6499ac;
+}
+.pwd {
+	margin-bottom: 35px;
+	border: 2px solid #6499ac;
 }
 
-.signup-form button {
-	width: 15rem;
-	height: 5rem;
-	background-color: #3aaf9f;
-	border: none;
-	border-radius: 3rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	color: #fff;
-	margin-top: 3rem;
+#submit_btn {
+	text-align: left;
+	padding: 10px 20px;
+	margin-top: 70px;
+	margin: auto;
+	width: 7rem;
+	height: 2.9rem;
 	cursor: pointer;
+	color: #3f3f31;
+	font-size: 1.2rem;
+	border: 2px solid #6499ac;
+	border-radius: 20px;
+	text-align: center;
+	justify-content: center;
 }
+
+#submit_btn :hover {
+	border-color: #cfdade;
+	background-color: #162564;
+}
+
+.todo_list {
+	font-size: 1.4rem;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 400px;
+	padding: 5px;
+	margin-top: 10rem;
+	justify-content: center;
+	left: 1rem;
+	position: absolute;
+}
+
+.h1_todo_list {
+	font-size: 2.3rem;
+}
+
+.btn_todo_list {
+	text-align: center;
+	font-size: 25px;
+	margin-left: 10px;
+	margin: 25px 25px 25px 200px;
+	width: 115px;
+	height: 35px;
+	color: #555;
+	display: inline-block;
+	justify-content: flex-end;
+	border-radius: 20px;
+	padding-left: 5px 20px;
+}
+.btn_edit {
+	text-align: center;
+	font-size: 25px;
+	margin-left: 10px;
+	width: 115px;
+	height: 35px;
+	color: #555;
+	display: inline-block;
+	justify-content: flex-end;
+	border-radius: 20px;
+	padding-left: 5px 20px;
+}
+.btn_delete {
+	text-align: center;
+	font-size: 25px;
+	margin-left: 0;
+	width: 115px;
+	height: 35px;
+	color: #555;
+	display: inline-block;
+	justify-content: flex-end;
+	border-radius: 20px;
+	padding-left: 5px 20px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.btn_delete,
+.btn_edit {
+	background-color: #6499ac;
+	color: #555;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 15px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn_delete:hover,
+.btn_edit:hover {
+	background-color: #55899b; /* Darker color on hover */
+}
+
+.bdy_backgrnd_color .h1 {
+	background-color: #55899b;
+	text-align: center;
+	font-size: 25px;
+	margin-left: 0;
+	width: 115px;
+	height: 35px;
+	color: #555;
+	display: inline-block;
+	justify-content: flex-end;
+	border-radius: 20px;
+	padding-left: 5px 20px;
+}
+
+/* .h1_todo_edit {
+	background-color: #6499ac;
+	color: #555;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 15px;
+	cursor: pointer;
+	text-decoration: none;
+} */

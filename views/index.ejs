@@ -2,14 +2,13 @@
 <html>
 	<head>
 		<title>To-Do List</title>
-		<!-- <link rel="stylesheet" href="style.css" /> -->
-		<link rel="stylesheet" href="tyle.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>Your To-Do List</h1>
+		<h1 class="h1_todo_list">Your To-Do List</h1>
 		<form action="/todo" method="POST">
 			<input type="text" name="todo" placeholder="New Task" required />
-			<button type="submit">Add</button>
+			<button class="btn_todo_list" type="submit">Add</button>
 		</form>
 		<ul>
 			<% todos.forEach(todo => { %>
@@ -20,9 +19,9 @@
 					method="POST"
 					style="display: inline"
 				>
-					<button type="submit">Delete</button>
+					<button class="btn_delete" type="submit">Delete</button>
 				</form>
-				<a href="/todo/<%= todo._id %>">Edit</a>
+				<a class="btn_edit" href="/todo/<%= todo._id %>">Edit</a>
 			</li>
 			<% }) %>
 		</ul>

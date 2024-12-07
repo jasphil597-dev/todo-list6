@@ -64,10 +64,6 @@ exports.getEditTodo = async (req, res) => {
 			return res.status(404).send('Todo not found.');
 		}
 
-		// Using the callback version of findById
-		// Tod o.findById(todoId, (err, todo) => {
-		// 	console.log(err, todo);
-
 		// If no errors, render the edit page
 		res.render('edit', { todo });
 	} catch (err) {

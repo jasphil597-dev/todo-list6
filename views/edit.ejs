@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Edit Task</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<title>Edit Todo</title>
 	</head>
-	<body>
-		<h1>Edit Task</h1>
-		<form action="/todo/<%= todo._id %>?_method=PUT" method="POST">
+	<body class="edit_body" style="background-color: #55899b">
+		<div2>
+			<h1 class="h1_todo_list">Edit To-do</h1>
+		</div2>
+
+		<form
+			class="edit_box"
+			action="/todo/<%= todo._id %>?_method=PUT"
+			method="POST"
+		>
 			<input type="text" name="todo" value="<%= todo.todo %>" required />
 			<button type="submit">Save</button>
 		</form>
